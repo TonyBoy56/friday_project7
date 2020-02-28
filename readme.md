@@ -6,12 +6,17 @@
 
 ## Description
 
-__
+_This is a console application written in C# that allows a user to purchase a variety of breads and pastries from a bakery. Upon submission, a statement of their total cost for both will be shown._
 
 
 ## SPEC Sheet
 
-
+* Bread options are shown to the user.
+  * Input: The user runs the application (dotnet run).
+  * Output: List of Bread and Pastry items, along with their pricing.
+* Choose from the list and add to user's basket.
+  * Input: User chooses 2 of each Bread/Pastry.
+  * Output: Pricing for both items.
 
 ## Setup/Installation Requirements
 
