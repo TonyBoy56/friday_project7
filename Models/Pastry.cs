@@ -15,7 +15,7 @@ namespace Bakery.Models
         }
         public static void BreadInfo()
         {
-            Console.Write("Here is our current selection")
+            Console.Write("Here is our current selection");
         }
     }
 }

@@ -17,7 +17,12 @@ namespace Bakery
             Console.WriteLine("Buy: [bread] [pastry] View Menus: [menus]");
             
             string response = Console.ReadLine();
-            response = response.toLower();
+            response = response.ToLower();
         }
+        // public static void OrderForm()
+        // {
+        //     Console.WriteLine("For the sake of keeping things organized, could we have a name for this order?");
+        //     string name = Console.ReadLine();
+        // }
     }
 }
