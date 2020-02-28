@@ -6,23 +6,38 @@ namespace Bakery
 {
     public class Program
     {
-        // Create objects of Bread and Pastry classes //
-        public static Bread typeA = new Bread();
-        public static Pastry typeB = new Pastry();
-        // Here will go initial text prompting the user for inputs //
         public static void Main()
+        {
+            string response = CurrentOrder();
+            PlaceOrder(response);
+        }
+
+        public static string CurrentOrder()
         {
             Console.WriteLine("Hello! Welcome to Tony's Bakery!");
             Console.WriteLine("Here are our current options:");
-            Console.WriteLine("Buy: [bread] [pastry] View Menus: [menus]");
+            Console.WriteLine("Buy: [bread] [pastry]");
             
             string response = Console.ReadLine();
-            response = response.ToLower();
+            return response;
+            // response = response.ToLower();
         }
 
-        public static void CurrentOrder()
+        public static void PlaceOrder(string response)
         {
-            
+            if (response.ToLower() == "bread")
+            {
+                Console.WriteLine("How much would you like to purchase?");
+                int totalBread = BreadForm();
+                Console.WriteLine("Your total for bread is $" + totalBread + ".");
+            }
+
+            else if (response.ToLower() == "pastry")
+            {
+                Console.WriteLine("How much would you like to purchase?");
+                int totalPastry = PastryForm();
+                Console.WriteLine("Your total for pastries are $" + totalPastry + ".");
+            }
         }
 
         // Takes input for number of loaves to purchase, and returns total. //
@@ -30,7 +45,7 @@ namespace Bakery
         {
             Console.WriteLine("Please enter the number of loaves for your purchase.");
             string breadQuantity = Console.ReadLine();
-            int breadQ = int.parse(breadQuantity);
+            int breadQ = Int32.Parse(breadQuantity);
             Bread breadOrder = new Bread(breadQ);
             int totalBread = breadOrder.Price;
 
@@ -41,7 +56,7 @@ namespace Bakery
         {
             Console.WriteLine("Please enter the number of pastries for your purchase.");
             string pastryQuantity = Console.ReadLine();
-            int pastryQ = int.parse(pastryQuantity);
+            int pastryQ = Int32.Parse(pastryQuantity);
             Pastry pastryOrder = new Pastry(pastryQ);
             int totalPastry = pastryOrder.Price;
 
