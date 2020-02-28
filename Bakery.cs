@@ -19,10 +19,33 @@ namespace Bakery
             string response = Console.ReadLine();
             response = response.ToLower();
         }
-        // public static void OrderForm()
-        // {
-        //     Console.WriteLine("For the sake of keeping things organized, could we have a name for this order?");
-        //     string name = Console.ReadLine();
-        // }
+
+        public static void CurrentOrder()
+        {
+            
+        }
+
+        // Takes input for number of loaves to purchase, and returns total. //
+        public static int BreadForm()
+        {
+            Console.WriteLine("Please enter the number of loaves for your purchase.");
+            string breadQuantity = Console.ReadLine();
+            int breadQ = int.parse(breadQuantity);
+            Bread breadOrder = new Bread(breadQ);
+            int totalBread = breadOrder.Price;
+
+            return totalBread;
+        }
+        // Takes input for number of pastries to order, and returns total. //
+        public static int PastryForm()
+        {
+            Console.WriteLine("Please enter the number of pastries for your purchase.");
+            string pastryQuantity = Console.ReadLine();
+            int pastryQ = int.parse(pastryQuantity);
+            Pastry pastryOrder = new Pastry(pastryQ);
+            int totalPastry = pastryOrder.Price;
+
+            return totalPastry;
+        }
     }
 }
