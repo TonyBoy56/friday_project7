@@ -8,14 +8,12 @@ namespace Bakery.Models
     public class Pastry
     {
         public int Quantity { get; set; }
+        public int Price { get; set; }
 
-        public Pastry()
+        public Pastry(int quantity)
         {
-            Quantity = 0;
-        }
-        public static void BreadInfo()
-        {
-            Console.Write("Here is our current selection");
+            Quantity = quantity;
+            Price = quantity * 2;
         }
     }
 }
