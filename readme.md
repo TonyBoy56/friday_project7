@@ -17,6 +17,16 @@ _This is a console application written in C# that allows a user to purchase a va
 * Choose from the list and add to user's basket.
   * Input: User chooses 2 of each Bread/Pastry.
   * Output: Pricing for both items.
+* Allow the user to add to the order.
+  * Input: Add more items to the order.
+  * Output: Add more bread and pastries.
+* Proceed to checkout.
+  * Input: User selects 'checkout'.
+  * Output: Order is totaled and displayed.
+* Option to clear order form prior to checkout.
+  * Input: User opts to clear their order.
+  * Output: Basket is empty. can add items.
+
 
 ## Setup/Installation Requirements
 
