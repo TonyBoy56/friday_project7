@@ -30,6 +30,10 @@ namespace Bakery
                 Console.WriteLine("How much would you like to purchase?");
                 int totalBread = BreadForm();
                 Console.WriteLine("Your total for bread is $" + totalBread + ".");
+                Console.WriteLine("Would you like to add anything to your purchase?");
+                Console.WriteLine("Buy: [bread] [pastry] [checkout]");
+                string addMore = Console.ReadLine();
+                // if ()
             }
 
             else if (response.ToLower() == "pastry")
