@@ -30,12 +30,7 @@ namespace Bakery
                 Console.WriteLine("How much would you like to purchase?");
                 int totalBread = BreadForm();
                 Console.WriteLine("Your total for bread is $" + totalBread + ".");
-                AddToBasket();
-                // if (addMore.ToLower() == "bread")
-                // {
-                //     AddToBasket(addMore);
-                // }
-                // // AddToBasket();
+                // AddToBasket();
             }
 
             else if (response.ToLower() == "pastry")
@@ -46,24 +41,24 @@ namespace Bakery
             }
         }
 
-        public static void AddToBasket()
-        {
-            Console.WriteLine("Would you like to add anything else to your purchase?");
-            Console.WriteLine("Buy: [bread] [pastry] [checkout]");
-            string addMore = Console.ReadLine();
-            if (addMore.ToLower() == "bread")
-            {
-                PlaceOrder("bread");
-            }
-            else if (addMore.ToLower() == "pastry")
-            {
-                PlaceOrder("pastry");
-            }
-            else if (addMore.ToLower() == "checkout") 
-            {
+        // public static void AddToBasket()
+        // {
+        //     Console.WriteLine("Would you like to add anything else to your purchase?");
+        //     Console.WriteLine("Buy: [bread] [pastry] [checkout]");
+        //     string addMore = Console.ReadLine();
+        //     if (addMore.ToLower() == "bread")
+        //     {
+        //         PlaceOrder("bread");
+        //     }
+        //     else if (addMore.ToLower() == "pastry")
+        //     {
+        //         PlaceOrder("pastry");
+        //     }
+        //     else if (addMore.ToLower() == "checkout") 
+        //     {
                 
-            }
-        }
+        //     }
+        // }
 
         // Takes input for number of loaves to purchase, and returns total. //
         public static int BreadForm()
