@@ -30,14 +30,12 @@ namespace Bakery
                 Console.WriteLine("How much would you like to purchase?");
                 int totalBread = BreadForm();
                 Console.WriteLine("Your total for bread is $" + totalBread + ".");
-                Console.WriteLine("Would you like to add anything else to your purchase?");
-                Console.WriteLine("Buy: [bread] [pastry] [checkout]");
-                string addMore = Console.ReadLine();
-                if (addMore.ToLower() == "bread")
-                {
-                    AddToBasket(addMore);
-                }
-                // AddToBasket();
+                AddToBasket();
+                // if (addMore.ToLower() == "bread")
+                // {
+                //     AddToBasket(addMore);
+                // }
+                // // AddToBasket();
             }
 
             else if (response.ToLower() == "pastry")
@@ -45,27 +43,25 @@ namespace Bakery
                 Console.WriteLine("How much would you like to purchase?");
                 int totalPastry = PastryForm();
                 Console.WriteLine("Your total for pastries are $" + totalPastry + ".");
-                // Console.WriteLine("Would you like to add anything else to your purchase?");
-                // Console.WriteLine("Buy: [bread] [pastry] [checkout]");
-                // string addMore = Console.ReadLine();
-                // if (addMore.ToLower() == "bread")
-                // {
-                //     AddToBasket(totalBread);
-                // }
             }
         }
 
-        public static void AddToBasket(addMore)
+        public static void AddToBasket()
         {
+            Console.WriteLine("Would you like to add anything else to your purchase?");
+            Console.WriteLine("Buy: [bread] [pastry] [checkout]");
+            string addMore = Console.ReadLine();
             if (addMore.ToLower() == "bread")
             {
-                Console.WriteLine("Please enter the number of loaves for your purchase.");
-                string newBreadQuantity = Console.ReadLine();
-                int newBreadQ = Int32.Parse(newBreadQuantity);
-                Bread newBreadOrder = new Bread(newBreadQ);
-                int newTotalBread = newBreadOrder.Price; 
-                int breadMath = totalBread + newTotalBread;
-                Console.WriteLine("Your order total is $" + breadMath + ".");
+                PlaceOrder("bread");
+            }
+            else if (addMore.ToLower() == "pastry")
+            {
+                PlaceOrder("pastry");
+            }
+            else if (addMore.ToLower() == "checkout") 
+            {
+                
             }
         }
 
