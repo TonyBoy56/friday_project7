@@ -1,6 +1,6 @@
 # _C# Basics_
 
-#### _This is a running webpage, as of 2/22/20._
+#### _This is a running program, as of 3/7/20._
 
 #### By _**Antonio Cruz**_
 
@@ -17,28 +17,19 @@ _This is a console application written in C# that allows a user to purchase a va
 * Choose from the list and add to user's basket.
   * Input: User chooses 2 of each Bread/Pastry.
   * Output: Pricing for both items.
-* Allow the user to add to the order.
-  * Input: Add more items to the order.
-  * Output: Add more bread and pastries.
-* Proceed to checkout.
-  * Input: User selects 'checkout'.
-  * Output: Order is totaled and displayed.
-* Option to clear order form prior to checkout.
-  * Input: User opts to clear their order.
-  * Output: Basket is empty. can add items.
+
 
 
 ## Setup/Installation Requirements
 
-### INCLUDE INSTRUCTIONS TO USE WEBPACK'S SERVER AND API KEY
 * Clone this repo by selecting the "clone or download" button. This will allow you to copy the repo's link.
 * While on the command line in your terminal, enter "git clone" followed by the copied url.
-* Enter "ls" to show a list of files and documents. One of them will be labeled "friday_project5. Use "cd" followed by the project directory name to navigate there. 
-* While in project directory, open the contents of the directory, or use "code ." to enable the shortcut to open in Visual Studio Code. 
+* Enter "ls" to show a list of files and documents. One of them will be labeled "friday_project7". Use "cd" followed by the project directory name to navigate there. 
+* Run the program by typing "dotnet run" on the command-line.
 
 ## Known Bugs
 
-_Application is not yet in a functional state._
+_N/A_
 
 ## Support and contact details
 
@@ -49,6 +40,7 @@ _codrocks.cruz3@gmail.com_
 
 * _Markdown_
 * _Git_
+* .NET Core 2.2
 * C#
 
 
