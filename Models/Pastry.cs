@@ -13,12 +13,16 @@ namespace Bakery.Models
     public Pastry (int quantity) 
     {
       Quantity = quantity;
-      Price = quantity * 2;
+      Price = 0;
 
-      if (quantity % 3 == 0)
+      if (quantity <= 2 || quantity % 2 == 0)
       {
-        Price -= 1;
-        Console.WriteLine("There's a buy 3 for $5 deal today! Your quantity is " + quantity + " for the price of " + Price + ".");
+        Price = quantity * 2;
+      }
+      else if (quantity % 3 == 0)
+      {
+        Price += 5;
+        Console.WriteLine("There's a buy 3 for $5 sale happening now! Your total for " + quantity + " is $" + Price + ".");
       }
     }
   }

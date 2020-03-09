@@ -18,6 +18,7 @@ namespace Bakery.Models
       if (quantity % 3 == 0)
       {
         Price -=5;
+        Console.WriteLine("There's a buy 2 get 1 free sale! The quantity of your bread is " + quantity + " for the price of " + Price);
       }
       else if (quantity % 2 == 0)
       {
